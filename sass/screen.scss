@@ -1,0 +1,25 @@
+@import "compass/reset";
+
+@import "mixins";
+@import "variables";
+
+/*
+* * Global
+*/
+
+body{
+    *{
+        font-family: Helvetica;
+        box-sizing:border-box;
+    }
+
+    &.main-page{
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+}
+
+@import "game";

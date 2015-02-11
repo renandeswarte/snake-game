@@ -1,0 +1,172 @@
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+* * Global
+*/
+/* line 11, ../sass/screen.scss */
+body * {
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+/* line 16, ../sass/screen.scss */
+body.main-page {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/* line 1, ../sass/_game.scss */
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -300px;
+  margin-left: -300px;
+  height: 600px;
+  width: 600px;
+  background-color: #EEE;
+}
+/* line 12, ../sass/_game.scss */
+.main .snake {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0000FF;
+  transition: all 0.2s ease;
+  z-index: 999;
+}
+/* line 23, ../sass/_game.scss */
+.main .belly {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+/* line 29, ../sass/_game.scss */
+.main .belly.belly-1 {
+  background-color: #1111FF;
+  z-index: 15;
+}
+/* line 33, ../sass/_game.scss */
+.main .belly.belly-2 {
+  background-color: #2222FF;
+}
+/* line 36, ../sass/_game.scss */
+.main .belly.belly-3 {
+  background-color: #3333FF;
+}
+/* line 39, ../sass/_game.scss */
+.main .belly.belly-4 {
+  background-color: #4444FF;
+}
+/* line 42, ../sass/_game.scss */
+.main .belly.belly-5 {
+  background-color: #5555FF;
+}
+/* line 45, ../sass/_game.scss */
+.main .belly.belly-6 {
+  background-color: #6666FF;
+}
+/* line 48, ../sass/_game.scss */
+.main .belly.belly-7 {
+  background-color: #7777FF;
+}
+/* line 51, ../sass/_game.scss */
+.main .belly.belly-8 {
+  background-color: #8888FF;
+}
+/* line 54, ../sass/_game.scss */
+.main .belly.belly-9 {
+  background-color: #9999FF;
+}
+/* line 57, ../sass/_game.scss */
+.main .belly.belly-10 {
+  background-color: #AAAAFF;
+}
+/* line 60, ../sass/_game.scss */
+.main .belly.belly-11 {
+  background-color: #BBBBFF;
+}
+/* line 63, ../sass/_game.scss */
+.main .belly.belly-12 {
+  background-color: #CCCCFF;
+}
+/* line 66, ../sass/_game.scss */
+.main .belly.belly-13 {
+  background-color: #DDDDFF;
+}
+/* line 69, ../sass/_game.scss */
+.main .belly.belly-14 {
+  background-color: #DEDEFF;
+}
+/* line 72, ../sass/_game.scss */
+.main .belly.belly-15 {
+  background-color: #DFDFFF;
+}
