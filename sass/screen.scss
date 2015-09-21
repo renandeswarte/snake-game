@@ -1,25 +1,55 @@
 @import "compass/reset";
 
-@import "mixins";
-@import "variables";
-
 /*
 * * Global
 */
 
 body{
-    *{
-        font-family: Helvetica;
-        box-sizing:border-box;
-    }
+  *{
+    font-family: Helvetica;
+    box-sizing:border-box;
+  }
 
-    &.main-page{
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
+  &.main-page{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .informations{
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  // Impact Popup
+  #impact-popup{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    text-align: center;
+    margin-left: -50px;
+    margin-top: -35px;
+    padding: 10px;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 8px 0px #AAA;
+    p {
+      margin-bottom: 10px;
     }
+    button{
+      background-color : #1D6AAD;
+      color: #FFF;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 15px;
+    }
+  }
 }
 
 @import "game";

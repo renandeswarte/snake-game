@@ -1,76 +1,87 @@
 .main{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -300px;
+  margin-left: -300px;
+  height: 600px;
+  width: 600px;
+  background-color: #EEE;
+
+  .food {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -300px;
-    margin-left: -300px;
-    height: 600px;
-    width: 600px;
-    background-color: #EEE;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+  }
 
+  .snakeHead{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0000FF;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    z-index: 999;
+  }
 
-    .snake{
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #0000FF;
-        transition: all 0s ease;
-        z-index: 999;
+  .snakeBody{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    //for extra elements after food
+    background-color: #DFDFFF;
 
+    &.snakeBody-1{
+      background-color: #1111FF;
+      z-index: 15;
     }
-
-    .belly{
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        transition: all 0s ease;
-        &.belly-1{
-            background-color: #1111FF;
-            z-index: 15;
-        }
-        &.belly-2{
-            background-color: #2222FF;    
-        }
-        &.belly-3{
-            background-color: #3333FF;    
-        }
-        &.belly-4{
-            background-color: #4444FF;    
-        }
-        &.belly-5{
-            background-color: #5555FF;    
-        }
-        &.belly-6{
-            background-color: #6666FF;    
-        }
-        &.belly-7{
-            background-color: #7777FF;
-        }
-        &.belly-8{
-            background-color: #8888FF;
-        }
-        &.belly-9{
-            background-color: #9999FF;
-        }
-        &.belly-10{
-            background-color: #AAAAFF;
-        }
-        &.belly-11{
-            background-color: #BBBBFF;
-        }
-        &.belly-12{
-            background-color: #CCCCFF;
-        }
-        &.belly-13{
-            background-color: #DDDDFF;
-        }
-        &.belly-14{
-            background-color: #DEDEFF;
-        }
-        &.belly-15{
-            background-color: #DFDFFF;
-        }
+    &.snakeBody-2{
+      background-color: #2222FF;    
     }
+    &.snakeBody-3{
+      background-color: #3333FF;    
+    }
+    &.snakeBody-4{
+      background-color: #4444FF;    
+    }
+    &.snakeBody-5{
+      background-color: #5555FF;    
+    }
+    &.snakeBody-6{
+      background-color: #6666FF;    
+    }
+    &.snakeBody-7{
+      background-color: #7777FF;
+    }
+    &.snakeBody-8{
+      background-color: #8888FF;
+    }
+    &.snakeBody-9{
+      background-color: #9999FF;
+    }
+    &.snakeBody-10{
+      background-color: #AAAAFF;
+    }
+    &.snakeBody-11{
+      background-color: #BBBBFF;
+    }
+    &.snakeBody-12{
+      background-color: #CCCCFF;
+    }
+    &.snakeBody-13{
+      background-color: #DDDDFF;
+    }
+    &.snakeBody-14{
+      background-color: #DEDEFF;
+    }
+    &.snakeBody-15{
+      background-color: #DFDFFF;
+    }
+  }
 }
