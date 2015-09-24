@@ -5,6 +5,8 @@ $(function(){
   var snakeBody = [];
   var snakeBodyLength = 15;
   var extramove;
+  var score = 0;
+  var bestScore = 0;
 
   // Add roundTo method for multiple of 20
   Number.prototype.roundTo = function(num) {
@@ -22,6 +24,9 @@ $(function(){
 
   // Initiate snake position
   function initiate(){
+
+    score = 0;
+    $('.actual-score').html(0);
 
     snakePosition_left = 0;
     snakePosition_top = 0 ;
@@ -187,6 +192,10 @@ $(function(){
   function eatFood() {
     if ( food.top === snakePosition_top && food.left === snakePosition_left) {
         $(".food").remove();
+
+        //Increment score
+        updateScore(score);
+
         snakeBodyLength++;
         $(".main").append('<div class="snakeBody snakeBody-' + snakeBodyLength + '"></div>');
         snakeBody[snakeBodyLength] = {};
@@ -198,6 +207,17 @@ $(function(){
         });
         food = showFood();
       }
+  }
+
+  // Score Functions
+  function updateScore(myScore) {
+    myScore += 20;
+    if (myScore > bestScore) {
+      bestScore = myScore;
+      $('.best-score').html(myScore);
+    }
+    $('.actual-score').html(myScore);
+    score = myScore;
   }
 
 });
